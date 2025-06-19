@@ -316,15 +316,8 @@
                 <i class="fas fa-info-circle"></i>
                 <div>Your withdrawal will be processed within 24 hours. Please ensure all details are accurate.</div>
             </div>
-            
-            <div class="withdrawal-form">
-                <div class="form-group">
-                    <label for="accountNumber">Bank Account Number</label>
-                    <input type="text" id="accountNumber" placeholder="Enter your bank account number">
-                    <i class="fas fa-university input-icon"></i>
-                </div>
-                
-                <div class="form-group">
+               
+             <div class="form-group">
                     <label for="dream11Profile">Dream11 Profile ID</label>
                     <input type="text" id="dream11Profile" placeholder="Enter your Dream11 profile ID">
                     <i class="fas fa-user input-icon"></i>
@@ -374,11 +367,10 @@
     </div>
 
     <script>
-        document.getElementById('withdrawBtn').addEventListener('click', function() {
-            const accountNumber = document.getElementById('accountNumber').value.trim();
+        document.getElementById('withdrawBtn').addEventListener('click', function()  
             const dream11Profile = document.getElementById('dream11Profile').value.trim();
             
-            if (!accountNumber || !dream11Profile) {
+            if (!dream11Profile) {
                 alert('Please fill in your bank account number and Dream11 profile ID');
                 return;
             }
